@@ -1,0 +1,80 @@
+Feature,Group,Type,Train NA count,Train NA %,Test NA count,Test NA %,Unique non-NA values,Most common value share %
+PoolQC,Outdoor amenities,Categorical,1453,99.52054794520548,1456,99.7943797121316,3,99.52054794520548
+MiscFeature,Outdoor amenities,Categorical,1406,96.30136986301369,1408,96.50445510623715,4,96.30136986301369
+Alley,Land and location,Categorical,1369,93.76712328767123,1352,92.66620973269363,2,93.76712328767123
+Fence,Outdoor amenities,Categorical,1179,80.75342465753424,1169,80.12337217272105,4,80.75342465753424
+FireplaceQu,Interior and living space,Categorical,690,47.26027397260274,730,50.03427004797807,5,47.26027397260274
+LotFrontage,Land and location,Numeric,259,17.73972602739726,227,15.558601782042494,110,17.73972602739726
+GarageType,Garage and parking,Categorical,81,5.5479452054794525,76,5.20904729266621,6,59.589041095890416
+GarageYrBlt,Garage and parking,Numeric,81,5.5479452054794525,78,5.346127484578479,97,5.5479452054794525
+GarageQual,Garage and parking,Categorical,81,5.5479452054794525,78,5.346127484578479,5,89.7945205479452
+GarageCond,Garage and parking,Categorical,81,5.5479452054794525,78,5.346127484578479,5,90.82191780821918
+GarageFinish,Garage and parking,Categorical,81,5.5479452054794525,78,5.346127484578479,3,41.43835616438356
+BsmtFinType2,Basement,Categorical,38,2.6027397260273974,42,2.878684030157642,6,86.02739726027397
+BsmtExposure,Basement,Categorical,38,2.6027397260273974,44,3.015764222069911,4,65.27397260273973
+BsmtCond,Basement,Categorical,37,2.5342465753424657,45,3.0843043180260454,4,89.7945205479452
+BsmtFinType1,Basement,Categorical,37,2.5342465753424657,42,2.878684030157642,6,29.45205479452055
+BsmtQual,Basement,Categorical,37,2.5342465753424657,44,3.015764222069911,4,44.45205479452055
+MasVnrArea,Structure and exterior,Numeric,8,0.547945205479452,15,1.0281014393420151,327,58.972602739726035
+MasVnrType,Structure and exterior,Categorical,8,0.547945205479452,16,1.0966415352981496,4,59.178082191780824
+Electrical,Interior and living space,Categorical,1,0.0684931506849315,0,0.0,5,91.36986301369862
+BedroomAbvGr,Interior and living space,Numeric,0,0.0,0,0.0,8,55.06849315068493
+BsmtHalfBath,Interior and living space,Numeric,0,0.0,2,0.1370801919122687,3,94.3835616438356
+FullBath,Interior and living space,Numeric,0,0.0,0,0.0,4,52.602739726027394
+KitchenAbvGr,Interior and living space,Numeric,0,0.0,0,0.0,4,95.34246575342465
+HalfBath,Interior and living space,Numeric,0,0.0,0,0.0,3,62.534246575342465
+Functional,Interior and living space,Categorical,0,0.0,2,0.1370801919122687,7,93.15068493150685
+Fireplaces,Interior and living space,Numeric,0,0.0,0,0.0,4,47.26027397260274
+KitchenQual,Interior and living space,Categorical,0,0.0,1,0.06854009595613435,4,50.34246575342466
+TotRmsAbvGrd,Interior and living space,Numeric,0,0.0,0,0.0,12,27.534246575342465
+MSSubClass,Land and location,Categorical,0,0.0,0,0.0,15,36.71232876712329
+GrLivArea,Interior and living space,Numeric,0,0.0,0,0.0,861,1.5068493150684932
+GarageCars,Garage and parking,Numeric,0,0.0,1,0.06854009595613435,5,56.43835616438356
+GarageArea,Garage and parking,Numeric,0,0.0,1,0.06854009595613435,441,5.5479452054794525
+PavedDrive,Garage and parking,Categorical,0,0.0,0,0.0,3,91.78082191780823
+WoodDeckSF,Outdoor amenities,Numeric,0,0.0,0,0.0,274,52.12328767123287
+OpenPorchSF,Outdoor amenities,Numeric,0,0.0,0,0.0,202,44.93150684931507
+EnclosedPorch,Outdoor amenities,Numeric,0,0.0,0,0.0,120,85.75342465753425
+3SsnPorch,Outdoor amenities,Numeric,0,0.0,0,0.0,20,98.35616438356163
+ScreenPorch,Outdoor amenities,Numeric,0,0.0,0,0.0,76,92.05479452054794
+PoolArea,Outdoor amenities,Numeric,0,0.0,0,0.0,8,99.52054794520548
+MiscVal,Outdoor amenities,Numeric,0,0.0,0,0.0,21,96.43835616438356
+MoSold,Sale details,Numeric,0,0.0,0,0.0,12,17.328767123287673
+YrSold,Sale details,Numeric,0,0.0,0,0.0,5,23.15068493150685
+SaleType,Sale details,Categorical,0,0.0,1,0.06854009595613435,9,86.78082191780821
+BsmtFullBath,Interior and living space,Numeric,0,0.0,2,0.1370801919122687,4,58.63013698630137
+HeatingQC,Interior and living space,Categorical,0,0.0,0,0.0,5,50.753424657534254
+LowQualFinSF,Interior and living space,Numeric,0,0.0,0,0.0,24,98.21917808219179
+Neighborhood,Land and location,Categorical,0,0.0,0,0.0,25,15.41095890410959
+OverallCond,Structure and exterior,Numeric,0,0.0,0,0.0,9,56.232876712328775
+OverallQual,Structure and exterior,Numeric,0,0.0,0,0.0,10,27.19178082191781
+HouseStyle,Structure and exterior,Categorical,0,0.0,0,0.0,8,49.726027397260275
+BldgType,Structure and exterior,Categorical,0,0.0,0,0.0,5,83.56164383561644
+Condition2,Land and location,Categorical,0,0.0,0,0.0,8,98.97260273972603
+Condition1,Land and location,Categorical,0,0.0,0,0.0,9,86.3013698630137
+LandSlope,Land and location,Categorical,0,0.0,0,0.0,3,94.65753424657535
+2ndFlrSF,Interior and living space,Numeric,0,0.0,0,0.0,417,56.780821917808225
+LotConfig,Land and location,Categorical,0,0.0,0,0.0,5,72.05479452054794
+Utilities,Land and location,Categorical,0,0.0,2,0.1370801919122687,2,99.93150684931507
+LandContour,Land and location,Categorical,0,0.0,0,0.0,4,89.7945205479452
+LotShape,Land and location,Categorical,0,0.0,0,0.0,4,63.35616438356164
+Street,Land and location,Categorical,0,0.0,0,0.0,2,99.58904109589041
+LotArea,Land and location,Numeric,0,0.0,0,0.0,1073,1.7123287671232876
+YearBuilt,Structure and exterior,Numeric,0,0.0,0,0.0,112,4.589041095890411
+YearRemodAdd,Structure and exterior,Numeric,0,0.0,0,0.0,61,12.191780821917808
+RoofStyle,Structure and exterior,Categorical,0,0.0,0,0.0,6,78.15068493150686
+RoofMatl,Structure and exterior,Categorical,0,0.0,0,0.0,8,98.21917808219179
+Exterior1st,Structure and exterior,Categorical,0,0.0,1,0.06854009595613435,15,35.273972602739725
+Exterior2nd,Structure and exterior,Categorical,0,0.0,1,0.06854009595613435,16,34.52054794520548
+ExterQual,Structure and exterior,Categorical,0,0.0,0,0.0,4,62.054794520547944
+ExterCond,Structure and exterior,Categorical,0,0.0,0,0.0,5,87.8082191780822
+Foundation,Structure and exterior,Categorical,0,0.0,0,0.0,6,44.31506849315068
+BsmtFinSF1,Basement,Numeric,0,0.0,1,0.06854009595613435,637,31.986301369863014
+BsmtFinSF2,Basement,Numeric,0,0.0,1,0.06854009595613435,144,88.56164383561645
+BsmtUnfSF,Basement,Numeric,0,0.0,1,0.06854009595613435,780,8.082191780821917
+TotalBsmtSF,Basement,Numeric,0,0.0,1,0.06854009595613435,721,2.5342465753424657
+Heating,Interior and living space,Categorical,0,0.0,0,0.0,6,97.80821917808218
+MSZoning,Land and location,Categorical,0,0.0,4,0.2741603838245374,5,78.83561643835615
+CentralAir,Interior and living space,Categorical,0,0.0,0,0.0,2,93.4931506849315
+1stFlrSF,Interior and living space,Numeric,0,0.0,0,0.0,753,1.7123287671232876
+SaleCondition,Sale details,Categorical,0,0.0,0,0.0,6,82.05479452054794

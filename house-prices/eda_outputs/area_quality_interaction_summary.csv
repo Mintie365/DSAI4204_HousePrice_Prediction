@@ -1,0 +1,15 @@
+QualityGroup,AreaGroup,size,median
+Low (1-4),Q1: Small,87,91000.0
+Low (1-4),Q2,35,109900.0
+Low (1-4),Q3,15,133000.0
+Low (1-4),Q4: Large,4,128750.0
+Medium (5-6),Q1: Small,270,129000.0
+Medium (5-6),Q2,228,145625.0
+Medium (5-6),Q3,165,167000.0
+Medium (5-6),Q4: Large,108,185000.0
+High (7-8),Q1: Small,8,140200.0
+High (7-8),Q2,103,185000.0
+High (7-8),Q3,171,215200.0
+High (7-8),Q4: Large,205,254900.0
+Very high (9-10),Q3,13,320000.0
+Very high (9-10),Q4: Large,48,385000.0

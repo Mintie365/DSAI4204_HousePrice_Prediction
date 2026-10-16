@@ -1,0 +1,9 @@
+Feature,Unseen categories in test,Count of unseen categories
+MSSubClass,150,1
+MSZoning,__MISSING__,1
+Utilities,__MISSING__,1
+Exterior1st,__MISSING__,1
+Exterior2nd,__MISSING__,1
+KitchenQual,__MISSING__,1
+Functional,__MISSING__,1
+SaleType,__MISSING__,1

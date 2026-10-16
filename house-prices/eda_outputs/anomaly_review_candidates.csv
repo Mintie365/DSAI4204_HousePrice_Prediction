@@ -1,0 +1,16 @@
+Dataset,Id,Flag,GrLivArea,YearBuilt,YrSold,GarageYrBlt,SalePrice
+train,625,Masonry type None despite positive area,1790,1972,2006,1972.0,165150.0
+train,774,Masonry type None despite positive area,912,1958,2007,1958.0,114500.0
+train,1231,Masonry type None despite positive area,2620,1977,2007,1977.0,190000.0
+train,1301,Masonry type None despite positive area,1983,1999,2009,1999.0,225000.0
+train,1335,Masonry type None despite positive area,1365,1970,2009,1970.0,125000.0
+train,524,"Very large above-ground living area (> 4,000)",4676,2007,2007,2007.0,184750.0
+train,692,"Very large above-ground living area (> 4,000)",4316,1994,2007,1994.0,755000.0
+train,1183,"Very large above-ground living area (> 4,000)",4476,1996,2007,1996.0,745000.0
+train,1299,"Very large above-ground living area (> 4,000)",5642,2008,2008,2008.0,160000.0
+test,2593,GarageYrBlt after sale year + 1,1564,2006,2007,2207.0,
+test,2550,YearBuilt after sale year,5095,2008,2007,2008.0,
+test,2218,Basement marked NA despite positive area,1361,1895,2008,1895.0,
+test,2219,Basement marked NA despite positive area,1049,1910,2008,1910.0,
+test,1670,Masonry type None despite positive area,1808,2008,2009,2008.0,
+test,2453,Masonry type None despite positive area,968,1956,2007,1956.0,
