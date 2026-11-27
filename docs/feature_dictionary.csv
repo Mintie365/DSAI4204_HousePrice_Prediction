@@ -1,0 +1,87 @@
+feature,dtype,description,transformation
+TotalSF,float64,Combined basement and above-ground floor area.,log1p(TotalBsmtSF + 1stFlrSF + 2ndFlrSF)
+QualityTotalSF,float64,Interaction between overall quality and combined floor area.,log1p(OverallQual * (TotalBsmtSF + 1stFlrSF + 2ndFlrSF))
+QualityArea,float64,Interaction between overall quality and above-ground living area.,log1p(OverallQual * GrLivArea)
+GarageCars,int64,Size of garage in car capacity,GarageCars
+QualityCondition,int64,Interaction between overall quality and overall condition.,OverallQual * OverallCond
+OverallQual,int64,Rates the overall material and finish of the house,OverallQual
+GrLivArea,float64,Above grade (ground) living area square feet,log1p(nonnegative GrLivArea)
+1stFlrSF,float64,First Floor square feet,log1p(nonnegative 1stFlrSF)
+Neighborhood,object,Physical locations within Ames city limits,Neighborhood
+LotArea,float64,Lot size in square feet,log1p(nonnegative LotArea)
+YearBuilt,float64,Original construction date,YearBuilt
+RelativeLivingArea,float64,Living area relative to a typical home in the neighborhood.,GrLivArea / training neighborhood median GrLivArea
+TotalBsmtSF,float64,Total square feet of basement area,log1p(nonnegative TotalBsmtSF)
+YearsSinceRemodel,float64,Years between the last remodel and the sale.,YrSold - YearRemodAdd. Negative values are treated as missing.
+BsmtQual,float64,Evaluates the height of the basement,"Absent=0,Po=1,Fa=2,TA=3,Gd=4,Ex=5; unknown -> NaN"
+KitchenQual,float64,Kitchen quality,"Absent=0,Po=1,Fa=2,TA=3,Gd=4,Ex=5; unknown -> NaN"
+TotalBath,float64,Full-bathroom equivalents above ground and in the basement.,FullBath + 0.5 * HalfBath + BsmtFullBath + 0.5 * BsmtHalfBath
+OverallCond,int64,Rates the overall condition of the house,OverallCond
+BsmtFinSF1,float64,Type 1 finished square feet,log1p(nonnegative BsmtFinSF1)
+MSZoning,object,Identifies the general zoning classification of the sale.,MSZoning
+GarageArea,float64,Size of garage in square feet,log1p(nonnegative GarageArea)
+BsmtFinishRatio,float64,Share of basement area that is finished.,(BsmtFinSF1 + BsmtFinSF2) / TotalBsmtSF in raw units. Absent basement maps to 0 and unknown maps to -1.
+2ndFlrSF,float64,Second floor square feet,log1p(nonnegative 2ndFlrSF)
+FireplaceQu,float64,Fireplace quality,"Absent=0,Po=1,Fa=2,TA=3,Gd=4,Ex=5; unknown -> NaN"
+TotRmsAbvGrd,int64,Total rooms above grade (does not include bathrooms),TotRmsAbvGrd
+HeatingQC,float64,Heating quality and condition,"Absent=0,Po=1,Fa=2,TA=3,Gd=4,Ex=5; unknown -> NaN"
+CentralAir,object,Central air conditioning,CentralAir
+LotFrontage,float64,Linear feet of street connected to property,log1p(nonnegative LotFrontage)
+SaleCondition,object,Condition of sale,SaleCondition
+GarageQual,float64,Garage quality,"Absent=0,Po=1,Fa=2,TA=3,Gd=4,Ex=5; unknown -> NaN"
+Foundation,object,Type of foundation,Foundation
+ExterQual,float64,Evaluates the quality of the material on the exterior,"Absent=0,Po=1,Fa=2,TA=3,Gd=4,Ex=5; unknown -> NaN"
+MSSubClass,object,Identifies the type of dwelling involved in the sale.,"nominal category, not continuous code"
+BsmtUnfSF,float64,Unfinished square feet of basement area,log1p(nonnegative BsmtUnfSF)
+BsmtFinType1,object,Rating of basement finished area,BsmtFinType1
+HalfBath,int64,Half baths above grade,HalfBath
+FullBath,int64,Full bathrooms above grade,FullBath
+BsmtExposure,object,Refers to walkout or garden level walls,BsmtExposure
+TotalOutdoorSF,float64,Combined deck and porch area.,log1p(WoodDeckSF + OpenPorchSF + EnclosedPorch + 3SsnPorch + ScreenPorch)
+GarageType,object,Garage location,GarageType
+WoodDeckSF,float64,Wood deck area in square feet,log1p(nonnegative WoodDeckSF)
+OpenPorchSF,float64,Open porch area in square feet,log1p(nonnegative OpenPorchSF)
+LivLotRatio,float64,Above-ground living area relative to the lot area.,GrLivArea / LotArea in raw units
+Fireplaces,int64,Number of fireplaces,Fireplaces
+SaleType,object,Type of sale,SaleType
+Exterior1st,object,Exterior covering on house,Exterior1st
+GarageFinish,object,Interior finish of the garage,GarageFinish
+Condition1,object,Proximity to various conditions,Condition1
+KitchenAbvGr,int64,KitchenAbvGr,KitchenAbvGr
+GarageAge,float64,Garage age at the time of sale.,YrSold - GarageYrBlt. Absent garages and negative values are treated as missing.
+PavedDrive,object,Paved driveway,PavedDrive
+GarageAreaPerCar,float64,Garage area in square feet per car space.,GarageArea / GarageCars. Absent garage maps to 0 and unknown maps to -1.
+MasVnrArea,float64,Masonry veneer area in square feet,log1p(nonnegative MasVnrArea)
+Functional,object,Home functionality (Assume typical unless deductions are warranted),Functional
+ScreenPorch,float64,Screen porch area in square feet,log1p(nonnegative ScreenPorch)
+EnclosedPorch,float64,Enclosed porch area in square feet,log1p(nonnegative EnclosedPorch)
+Exterior2nd,object,Exterior covering on house (if more than one material),Exterior2nd
+MasVnrType,object,Masonry veneer type,MasVnrType
+BedroomAbvGr,int64,BedroomAbvGr,BedroomAbvGr
+Fence,object,Fence quality,Fence
+LotConfig,object,Lot configuration,LotConfig
+YrSold,int64,Year Sold (YYYY),YrSold
+LandContour,object,Flatness of the property,LandContour
+LotShape,object,General shape of property,LotShape
+BsmtCond,float64,Evaluates the general condition of the basement,"Absent=0,Po=1,Fa=2,TA=3,Gd=4,Ex=5; unknown -> NaN"
+HouseStyle,object,Style of dwelling,HouseStyle
+BsmtFullBath,int64,Basement full bathrooms,BsmtFullBath
+BldgType,object,Type of dwelling,BldgType
+Electrical,object,Electrical system,Electrical
+BsmtFinType2,object,Rating of basement finished area (if multiple types),BsmtFinType2
+LotFrontage_Missing,float64,Indicator for missing original lot frontage.,"1 if raw LotFrontage is missing, otherwise 0"
+RoofStyle,object,Type of roof,RoofStyle
+MiscVal,float64,$Value of miscellaneous feature,log1p(nonnegative MiscVal)
+Heating,object,Type of heating,Heating
+BsmtFinSF2,float64,Type 2 finished square feet,log1p(nonnegative BsmtFinSF2)
+LandSlope,object,Slope of property,LandSlope
+HasRemodel,float64,Indicator for a recorded remodel after construction.,"1 if YearRemodAdd > YearBuilt, otherwise 0"
+Alley,object,Type of alley access to property,Alley
+Fence_Missing,float64,Indicator for a missing or inapplicable raw fence field.,"1 if raw Fence is missing, otherwise 0"
+MoSold,int64,Month Sold (MM),MoSold
+CommunityMedian_OverallQual,float64,Median overall quality for the training neighborhood.,Neighborhood median OverallQual with the global training median as fallback
+CommunityMedian_LotArea,float64,Median raw lot area for the training neighborhood.,Neighborhood median LotArea with the global training median as fallback
+CommunityMedian_YearBuilt,float64,Median construction year for the training neighborhood.,Neighborhood median YearBuilt with the global training median as fallback
+RelativeQuality,float64,Overall quality relative to the training neighborhood median.,Raw OverallQual / CommunityMedian_OverallQual
+RelativeLotArea,float64,Lot area relative to the training neighborhood median.,Raw LotArea / CommunityMedian_LotArea
+CommunityYearDifference,float64,Difference between construction year and the training neighborhood median.,Raw YearBuilt - CommunityMedian_YearBuilt

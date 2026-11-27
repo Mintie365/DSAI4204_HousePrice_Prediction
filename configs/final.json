@@ -1,0 +1,39 @@
+{
+  "preprocessing": "C0",
+  "expected_predictors": 86,
+  "feature_selection": {
+    "scheme": "F6_enhanced",
+    "k": 80,
+    "near_constant": 0.99,
+    "compact": false,
+    "seed": 42
+  },
+  "model": {
+    "version": "v2.5",
+    "n_estimators": 8,
+    "random_state": 42,
+    "inference_precision": "float32",
+    "preprocessing_jobs": 1,
+    "ignore_pretraining_limits": true,
+    "output_type": "mean",
+    "torch_threads": 4
+  },
+  "evaluation": {
+    "n_splits": 5,
+    "split_seeds": [
+      2027,
+      2028
+    ]
+  },
+  "checkpoint": {
+    "repo": "Prior-Labs/tabpfn_2_5",
+    "revision": "6c45f3a6d0d07c6c5f62572e04a0c2929de91b8b",
+    "filename": "tabpfn-v2.5-regressor-v2.5_default.ckpt",
+    "sha256": "6e0308b7e5f3a8325b798b96d986b2b282c3608b1cda6e2991425a2a261d40b8"
+  },
+  "historical_submission": {
+    "device": "mps",
+    "public_log_rmse": 0.10925,
+    "csv_sha256": "871664cda67946f4d856c8afd79e88ea7e3530a23f0272580e0c07609f650747"
+  }
+}

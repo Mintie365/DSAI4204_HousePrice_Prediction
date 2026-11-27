@@ -1,0 +1,5 @@
+model,preprocessing,n_estimators,evaluation,split_seed,folds_per_split,log_rmse
+TabPFN 2.5,C0,8,mean_fold_cv,2027,5,0.10659135324264539
+TabPFN 2.5,C0,8,mean_fold_cv,2028,5,0.10465217220635183
+TabPFN 2.5,C0,8,mean_across_cv_seeds,,5,0.10562176272449861
+TabPFN 2.5,C0,8,recorded_kaggle_public,,,0.10925
